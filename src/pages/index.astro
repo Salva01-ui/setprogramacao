@@ -1,0 +1,49 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h2>🧑‍🚀 Hello, World Pythonista!</h2>
+			<p>
+				Seja bem-vindo ao site oficial da <code><strong>@set</strong>programacao</code> aqui você vai encontrar tudo relacionado às nossas plataformas!
+			</p>
+
+			<div class="nossos-cursos-index">
+				<h3>Confira os nossos cursos</h3>
+
+				<p>De forma progressiva estamos trabalhado em cursos que estão hospedados na <strong>Udemy</strong> uma das melhores plataformas de enseno online, se não a melhor!</p>
+			</div>
+
+			<div class="outros-nossos-projetos-de-ensino">
+				<h3>Ensino gratuito</h3>
+				<p>Para além dos cursos pagos hospedados na plataforma da <b>Udemy</b>, temos também alguns projetos em que nas quais apostamos ensinar de forma gratuita, com toda dedicaçào e amor completo em compromisso.</p>
+
+				<div class="free-platform youtube">
+
+					<h5>Canal Youtube</h5>
+					<p>Acesse o canal <a href="https://youtube.com/@setprogramacao" target="_blank">Clicando aqui...</a></p>
+					<p>Este é o maior projeto em número que seguidores  que disponho, e não só, é o que também tem mais conteúdos atualmente falando. Neste projeto, dedico o meu tempo de forma carinhosa para ajudar todas as pessoas a aprender atá o que devia ser pago de forma gratuita, com isso, <span class="italic">Todos os nossos cursos hospedados na Udemy, também são disponilizados no canal de forma gratís.</span> para saber mais sobre este projeto, <a href="#">clica aqui...</a></p>
+				</div>
+
+				<div class="free-platform instagram">
+
+					<h5>Instagram</h5>
+					<p>Acesse o insta <a href="https://instagram.com/setprogramacao" target="_blank">Clicando aqui...</a></p>
+					<p>Neste projeto, apostamos em ensinar de forma mais simples e em carosseis de imagens e mais, e podes crer, através desse projeto, ensinamos muitos fundamentos, muitas dicas e muita coisa bacana nos fazemos por lá. Para saber mais sobre este projeto <a href="#">clica aqui...</a></p>
+				</div>
+			</div>
+			
+		</main>
+		<Footer />
+	</body>
+</html>
